@@ -1,0 +1,314 @@
+:root {
+  /* Colors */
+  /* Primary */
+  --pink: hsl(322, 100%, 66%);
+  --light-pink: hsl(321, 100%, 78%);
+  --light-red: hsl(0, 100%, 63%);
+  /* Neutral */
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --very-pale-blue: hsl(207, 100%, 98%);
+
+  /* Padding */
+  --padding-container: 80px 0;
+
+  /* Typography */
+  /* Headings */
+  --open-sans: "Open Sans", sans-serif;
+  /* Body */
+  --poppins: "Poppins", sans-serif;
+  /* Sizes */
+  --s: 1.3rem;
+  --m: 1.6rem;
+  --l: 2rem;
+  --xl: 2.4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--open-sans);
+  font-size: 1.6rem;
+}
+
+.container {
+  inline-size: 90%;
+  max-inline-size: 1200px;
+  margin: 0 auto;
+  padding: var(--padding-container);
+
+  overflow: hidden;
+}
+
+.hero {
+  position: relative;
+  --wave-bottom: url("../images/bg-section-top-mobile-1.svg");
+}
+
+.hero__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  --padding-container: 30px 0 45px;
+}
+
+.hero__logo {
+  inline-size: 45%;
+  max-inline-size: 160px;
+}
+
+.hero__huddle {
+  width: 100%;
+  display: block; /* para quitar el margen que tienen por defecto las imágenes */
+}
+
+.hero__cta {
+  border: 2px solid;
+  padding: 6px 16px;
+
+  font-weight: 600;
+
+  color: var(--light-pink);
+  border-radius: 30px;
+  box-shadow: 0 0 1px;
+}
+
+.hero__main {
+  text-align: center;
+
+  color: var(--very-dark-cyan);
+}
+
+.hero__title {
+  font-family: var(--poppins);
+}
+
+.hero__paragraph {
+  inline-size: 90%;
+  margin: 16px auto;
+
+  line-height: 1.5;
+}
+
+.cta {
+  display: inline-block;
+
+  margin-block-start: 16px;
+  padding: 16px 30px;
+
+  font-weight: 600;
+
+  background-color: var(--pink);
+  color: #fff;
+  border-radius: 30px;
+}
+
+.hero__picture {
+  margin-block-start: 80px;
+}
+
+.hero__img {
+  display: block;
+
+  inline-size: 100%;
+  margin: 0 auto;
+  max-inline-size: 600px;
+}
+
+.hero__numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+
+  margin-block-start: 80px;
+  margin-block-end: 100px;
+}
+
+.hero__item {
+  overflow: hidden;
+}
+
+.hero__number {
+  font-size: 6rem;
+}
+
+.hero__icon {
+  display: block;
+  inline-size: 30px;
+}
+
+.wave {
+  position: absolute;
+
+  inline-size: 100%;
+  block-size: 100px;
+
+  background-repeat: no-repeat;
+  background-size: 100% 100px;
+}
+
+.wave--bottom {
+  left: 0;
+  bottom: 0;
+
+  background-image: var(--wave-bottom);
+}
+
+.wave--top {
+  left: 0;
+  top: 0;
+
+  background-image: var(--wave-top);
+}
+
+.section {
+  background-color: var(--very-pale-blue);
+  --padding-container: 110px 0;
+}
+
+.section--white {
+  position: relative;
+  background-color: #fff;
+  --padding-container: 210px 0;
+  --wave-top: url("../images/bg-section-bottom-mobile-1.svg");
+  --wave-bottom: url("../images/bg-section-top-mobile-2.svg");
+}
+
+.section__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__img {
+  display: block;
+
+  inline-size: 100%;
+  max-inline-size: 350px;
+  margin: 0 auto;
+}
+
+.section__texts {
+  text-align: center;
+
+  margin-block-start: 50px;
+}
+
+.subtitle {
+  margin-block-end: 16px;
+
+  font-family: var(--poppins);
+}
+
+.question {
+  position: relative;
+  text-align: center;
+
+  --wave-top: url("../images/bg-section-bottom-mobile-2.svg");
+  --wave-bottom: url("../images/bg-footer-top-mobile.svg");
+  --padding-container: 190px 0 210px;
+}
+
+.footer {
+  color: #fff;
+  background-color: var(--very-dark-cyan);
+}
+
+.footer__title {
+  text-transform: uppercase;
+  margin-block-end: 16px;
+
+  font-family: var(--poppins);
+  letter-spacing: 1px;
+}
+
+.footer__paragraph {
+  line-height: 1.5;
+  font-size: var(--s);
+  font-weight: 600;
+  margin: 16px 0 50px;
+}
+
+.footer__form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-block-end: 80px;
+}
+
+.footer__input {
+  inline-size: 100%;
+  block-size: 40px;
+  padding: 0 8px;
+
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  margin-block-end: 20px;
+
+  font-family: var(--open-sans);
+  font-size: var(--m);
+}
+
+.footer__cta {
+  inline-size: 140px;
+  block-size: 40px;
+  border: none;
+  margin-inline-start: auto;
+
+  color: #fff;
+  background-color: var(--pink);
+
+  font-family: var(--open-sans);
+  font-size: var(--m);
+  font-weight: 600;
+
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.footer__contact {
+  line-height: 50px;
+}
+
+.footer__contact::after {
+  content: "Phone: +1-543-123-4567";
+  margin-inline-start: 10px;
+}
+
+.footer__contact--email::after {
+  content: "example@huddle.com";
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  margin-block-start: 50px;
+}
+
+.footer__link {
+  inline-size: 40px;
+}
+
+.footer__icon {
+  display: block;
+
+  inline-size: 100%;
+}
